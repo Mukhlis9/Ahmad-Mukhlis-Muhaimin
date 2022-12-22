@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Gallery</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+<body align="center">
+<br>
+<h1><font size="16">Gallery</font></h1>
+<br>
+<a href="index.html"><button type="button" name="myButton">Home page</button></a>
+<a href="aboutme.html"><button type="button" name="myButton">About me</button></a>
+<a href="family.html"><button type="button" name="myButton">Family</button></a>
+<a href="experience.html"><button type="button" name="myButton">Experience</button></a>
+<a href="education.html"><button type="button" name="myButton">Education</button></a>
+<a href="othersfiles.html"><button type="button" name="myButton">Friends</button></a>
+<br>
+<br>
+<br>
+<br>
+<h2><font size="16">"Beautiful View"</font></h2>
+<br>
+<br>
+<br>
+<br>
+<div class=""container>
+  <div class="swiper">
+   <!-- Additional required wrapper -->
+   <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="image/grass.jpg"></div>
+    <div class="swiper-slide"><img src="image/mountain.jpg"></div>
+    <div class="swiper-slide"><img src="image/fuji.jpg"></div>
+    <div class="swiper-slide"><img src="image/istanbul.jpg"></div>
+    <div class="swiper-slide"><img src="image/bridge.jpg"></div>
+   </div>
+   <!-- If we need pagination -->
+   <div class="swiper-pagination"></div>
+
+   <!-- If we need navigation buttons -->
+   <div class="swiper-button-prev"></div>
+   <div class="swiper-button-next"></div>
+
+  </div>
+</div>
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+  
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+   navigation: {
+     nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+  },
+
+});
+
+</script>
+
+
+</body>
+</html>
